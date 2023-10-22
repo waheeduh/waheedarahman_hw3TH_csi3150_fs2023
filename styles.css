@@ -1,200 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-html, body { 
-  height: 100%; 
-  margin: 0; 
+  margin: 0;
   padding: 0;
   overflow: hidden;
 }
+html, body { 
+height: 100%; 
+margin: 0; 
+padding: 0;
+overflow: hidden;
+}
 
 .one { 
-    background-image: url(/images/junjiito.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh; 
-    color: rgb(32, 31, 31); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.container { 
-  height: 100%; 
-  overflow-y: scroll;
-}
-
-.content {
-    text-align: center;
-    position: relative;
-}
-
-
-h1 { 
-    font-size: 100px;
-    margin-bottom: 200px;
-    position: relative;
-}
-
-img {
-  width: 150px; 
-  height: auto;
-}
-
-.two { 
-  background-image: url(/images/page2.png);
+  background-image: url(/images/junjiito.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh; 
+  color: rgb(32, 31, 31); 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; 
-  overflow: auto;
 }
 
-.row{
-  width: 80%;
-  max-width: 1170px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 50px 30px; 
+.container { 
+height: 100%; 
+overflow-y: scroll;
 }
 
-.row .left{ 
-  overflow: hidden;
-}
-
-.row .right .content2 { 
-  padding-left: 20px;
-}
-
-.row .right .content2 { 
-  font-size: 16px;
-  line-height: 26px;
-  padding-bottom: 15px;
-}
-
-.seven {
-  background-image: url(/images/contactpage.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh; /* Use min-height to allow for dynamic content */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: black;
-  overflow: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#header-contact-page {
-  margin: 0;
-}
-
-<section class="seven">
-  <h1 id="header-contact-page">contact me</h1>
-  <div class="contact">
-    <form>
-      <!-- Your input fields and button here -->
-    </form>
-  </div>
-</section>
-
-.seven {
-  background-image: url(/images/contactpage.jpg);
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between;
-  align-items: center; 
-  color: black;
-  overflow: auto;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#header-contact-page {
-  margin: 0;
-  text-align: left; 
-}
-
-.contact {
-  width: 100%;
-  max-width: 600px;
-  margin-left: 40%; 
-}
-
-form {
-  width: 100%;
-}
-
-.input-group {
-  margin-bottom: 20px;
+.content {
+  text-align: center;
   position: relative;
 }
 
+
+h1 { 
+  font-size: 100px;
+  margin-bottom: 200px;
+  position: relative;
+}
+
+img {
+width: 150px; 
+height: auto;
+}
+
+.two { 
+background-image: url(/images/page2.png);
+background-position: center;
+background-size: cover;
+height: 100vh; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white; 
+overflow: auto;
+}
+
+.row{
+width: 80%;
+max-width: 1170px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-gap: 50px 30px; 
+}
+
+.row .left{ 
+overflow: hidden;
+}
+
+.row .right .content2 { 
+padding-left: 20px;
+}
+
+.row .right .content2 { 
+font-size: 16px;
+line-height: 26px;
+padding-bottom: 15px;
+}
+
+.seven {
+background-image: url(/images/contactpage.jpg);
+background-position: center;
+background-size: cover;
+min-height: 100vh; /* Use min-height to allow for dynamic content */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+color: black;
+overflow: auto;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+#header-contact-page {
+margin: 0;
+}
+
+
+.contact {
+width: 100%;
+max-width: 600px;
+margin-left: 40%; 
+}
+
+form {
+width: 100%;
+}
+
+.input-group {
+margin-bottom: 20px;
+position: relative;
+}
+
 input, textarea {
-  width: 100%;
-  padding: 10px;
-  outline: 0;
-  border: 1px solid #080808;
-  color: #070707;
-  background: transparent;
-  font-size: 15px;
-  text-align: left; /* Change text alignment to left */
-  box-sizing: border-box;
-  margin: 0;
+width: 100%;
+padding: 10px;
+outline: 0;
+border: 1px solid #080808;
+color: #070707;
+background: transparent;
+font-size: 15px;
+text-align: left;
+box-sizing: border-box;
+margin: 0;
 }
 
 label {
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 10px;
-  color: rgb(0, 0, 0);
-  cursor: text;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+padding: 10px;
+color: rgb(0, 0, 0);
+cursor: text;
 }
 
 button {
-  padding: 10px 0;
-  color: rgb(0, 0, 0);
-  outline: none;
-  background: transparent;
-  border: 1px solid rgb(0, 0, 0);
-  width: 100%;
-  cursor: pointer;
+padding: 10px 0;
+color: rgb(0, 0, 0);
+outline: none;
+background: transparent;
+border: 1px solid rgb(0, 0, 0);
+width: 100%;
+cursor: pointer;
 }
 
 .three { 
-  background-image: url(/images/sec3.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  color: rgb(0, 0, 0); 
-  overflow: auto;
+background-image: url(/images/sec3.jpg);
+background-position: center;
+background-size: cover;
+height: 100vh; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+color: rgb(0, 0, 0); 
+overflow: auto;
 }
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+float: left;
+width: 33.33%;
+padding: 5px;
 }
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+content: "";
+clear: both;
+display: table;
 }
