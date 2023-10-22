@@ -3,6 +3,12 @@
     padding: 0;
     overflow: hidden;
 }
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+  overflow: hidden;
+}
 
 .one { 
     background-image: url(/images/junjiito.jpg);
@@ -15,6 +21,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.container { 
+  height: 100%; 
+  overflow-y: scroll;
+}
+
 .content {
     text-align: center;
     position: relative;
@@ -32,57 +44,122 @@ img {
   height: auto;
 }
 
-body{background-color:#000; overflow:hidden;}
-
-html body [data-ca3_iconfont="ETmodules"]::before {
-    font-family: "ETmodules";
-}
-[data-ca3_icon]::before {
-    font-weight: normal;
-    content: attr(data-ca3_icon);
-}
-
-.ca3-scroll-down-arrow {
-	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
-	background-size: contain;
-	background-repeat: no-repeat;
+.two { 
+  background-image: url(/images/page2.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  overflow: auto;
 }
 
-.ca3-scroll-down-link {
-  cursor:pointer;
-	height: 60px;
-	width: 80px;
-	margin: 0px 0 0 -40px;
-	line-height: 60px;
-	position: absolute;
-	left: 50%;
-	bottom: 0px;
-	color: #000000;
-	text-align: center;
-	font-size: 70px;
-	z-index: 100;
-	text-decoration: none;
-	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-
-	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
-	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
-	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+.row{
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px 30px; 
 }
 
+.row .left{ 
+  overflow: hidden;
+}
 
-/*animated scroll arrow animation*/
-@-webkit-keyframes ca3_fade_move_down {
-  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+.row .right .content2 { 
+  padding-left: 20px;
 }
-@-moz-keyframes ca3_fade_move_down {
-  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { -moz-transform:translate(0,20px); opacity: 0; }
+
+.row .right .content2 { 
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 15px;
 }
-@keyframes ca3_fade_move_down {
-  0%   { transform:translate(0,-20px); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { transform:translate(0,20px); opacity: 0; }
+
+.seven { 
+  background-image:url(/images/contactpage.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: rgb(0, 0, 0); 
+  overflow: auto;
+}
+
+.contact { 
+  width: 100%; 
+  height: 100vh; 
+}
+
+form { 
+  width: 90%;
+  max-width: 600px;
+  margin: 0; 
+  text-align: right;
+}
+
+.input-group { 
+  margin-bottom: 20px;
+  position: relative;
+}
+
+input, textarea { 
+  width: 100%;
+  padding: 10px;
+  outline: 0; 
+  border: 1px solid #080808;
+  color: #070707;
+  background: transparent;
+  font-size: 15px;
+}
+
+label { 
+  height: 100%; 
+  position: absolute;
+  left: 0; 
+  top: 0; 
+  padding: 10px;
+  color:rgb(0, 0, 0);
+  cursor: text;
+}
+
+button { 
+  padding: 10px 0;
+  color:rgb(0, 0, 0);
+  outline: none;
+  background: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  cursor: pointer;
+}
+
+.three { 
+  background-image: url(/images/sec3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: rgb(0, 0, 0); 
+  overflow: auto;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
