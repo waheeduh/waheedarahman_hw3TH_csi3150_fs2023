@@ -3,6 +3,7 @@
   padding: 0;
   overflow: hidden;
 }
+
 html, body { 
 height: 100%; 
 margin: 0; 
@@ -44,39 +45,39 @@ width: 150px;
 height: auto;
 }
 
-.two { 
-background-image: url(/images/page2.png);
-background-position: center;
-background-size: cover;
-height: 100vh; 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-color: white; 
-overflow: auto;
+.two {
+  background-image: url(/images/page2.png);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100vh; 
+  color: rgb(255, 255, 255);
 }
 
-.row{
-width: 80%;
-max-width: 1170px;
-display: grid;
-grid-template-columns: 1fr 2fr;
-grid-gap: 50px 30px; 
+
+.left {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: left;
+  padding: 20px;
+  font-size: 24px;
 }
 
-.row .left{ 
-overflow: hidden;
+.right {
+  grid-column: 2;
+  text-align: left; 
+  overflow: auto; 
+  padding: 20px;
+  font-size: 20px; 
+  word-wrap: break-word;
+  max-width: 400px;
 }
 
-.row .right .content2 { 
-padding-left: 20px;
-}
-
-.row .right .content2 { 
-font-size: 16px;
-line-height: 26px;
-padding-bottom: 15px;
+.content2 {
+  text-align: right; 
+  white-space: normal;
+  margin-right: 5px;
 }
 
 .seven {
@@ -147,26 +148,27 @@ width: 100%;
 cursor: pointer;
 }
 
-.three { 
+.three {
 background-image: url(/images/sec3.jpg);
+background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-height: 100vh; 
 display: flex;
 flex-direction: column;
+align-items: center;
 justify-content: center;
-align-items: left;
-color: rgb(0, 0, 0); 
-overflow: auto;
-}
-.column {
-float: left;
-width: 33.33%;
-padding: 5px;
+height: 100vh; 
+color: rgb(241, 1, 1);
+font-size: 45px;
 }
 
-.row::after {
-content: "";
-clear: both;
-display: table;
+.row1 {
+  display: flex; /* Use flexbox to distribute items horizontally */
+  justify-content: space-evenly; /* Space the columns evenly horizontally */
+  align-items: center; /* Center the items vertically */
+  width: 100%; /* Set the row width to 100% of the container */
+}
+
+.column1, .column2, .column3 {
+  margin: 10px; /* Add margin for spacing between the images */
 }
