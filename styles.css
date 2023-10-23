@@ -12,7 +12,7 @@ overflow: hidden;
 }
 
 .one { 
-  background-image: url(../images/junjiito.jpg);
+  background-image: url(./images/junjiito.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh; 
@@ -46,7 +46,7 @@ height: auto;
 }
 
 .two {
-  background-image: url(/images/page2.png);
+  background-image: url(./images/page2.png);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -81,7 +81,7 @@ height: auto;
 }
 
 .eight {
-background-image: url(/images/contactpage.jpg);
+background-image: url(./images/contactpage.jpg);
 background-position: center;
 background-size: cover;
 min-height: 100vh; /* Use min-height to allow for dynamic content */
@@ -149,7 +149,7 @@ cursor: pointer;
 }
 
 .three {
-background-image: url(/images/sec3.jpg);
+background-image: url(./images/sec3.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -174,39 +174,41 @@ font-size: 45px;
 }
 
 .four { 
-  background-image: url(/images/sec4.jpg);
+  background-image: url(./images/sec4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   height: 100vh; 
-}
-
-.four {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  justify-content: center;
-  height: 100vh;
-  color: rgb(32, 31, 31);
+  color:rgb(255, 255, 255)
 }
 
 .left-content {
-  text-align: center; 
-  flex-grow: 1; 
+  text-align: center;
+  flex: 1; 
+  margin-right: auto; 
 }
 
 .right-content {
-  text-align: center; 
-  flex-grow: 1; 
+  text-align: center;
+  max-width: 40%; 
+  margin-right: 20%;
+}
+
+
+.right-content {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 10px; 
 }
 
 .five { 
-  background-image: url(/images/sec5.jpg);
+  background-image: url(./images/sec5.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -237,7 +239,7 @@ font-size: 45px;
 }
 
 .six { 
-  background-image: url(/images/sec6.PNG);
+  background-image: url(./images/sec6.PNG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
