@@ -12,7 +12,7 @@ overflow: hidden;
 }
 
 .one { 
-  background-image: url(/images/junjiito.jpg);
+  background-image: url(../images/junjiito.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh; 
@@ -163,14 +163,14 @@ font-size: 45px;
 }
 
 .row1 {
-  display: flex; /* Use flexbox to distribute items horizontally */
-  justify-content: space-evenly; /* Space the columns evenly horizontally */
-  align-items: center; /* Center the items vertically */
-  width: 100%; /* Set the row width to 100% of the container */
+  display: flex; 
+  justify-content: space-evenly; 
+  align-items: center;
+  width: 100%; 
 }
 
 .column1, .column2, .column3 {
-  margin: 10px; /* Add margin for spacing between the images */
+  margin: 10px; 
 }
 
 .four { 
